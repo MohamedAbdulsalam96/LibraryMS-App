@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-27 03:00:12.842954",
+ "description": "for Document of Book or similar item that can be rented",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "image",
+  "author",
+  "publisher",
+  "description",
+  "isbn",
+  "status",
+  "no_pages",
+  "book_classification"
+ ],
+ "fields": [
+  {
+   "fieldname": "book",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author "
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description "
+  },
+  {
+   "description": "ISBN: The International Standard Book Number.. is a numeric commercial book identifier that is intended to be unique.",
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN "
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status ",
+   "options": "Issued\nAvailable"
+  },
+  {
+   "fieldname": "no_pages",
+   "fieldtype": "Int",
+   "label": "No. Pages"
+  },
+  {
+   "fieldname": "book_classification",
+   "fieldtype": "Link",
+   "label": "Book Classification",
+   "options": "Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-27 03:06:38.092415",
+ "modified_by": "Administrator",
+ "module": "Library Management App",
+ "name": "Book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
